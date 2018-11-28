@@ -6,10 +6,25 @@
     <title>StarTips</title>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
+  <style>
+    header {
+    position: relative;
+}
+    img.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+    div.login {
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+  </style>
   <body>
     <header>
       <img src="images/StartipsWhite.png" alt="StarTips Logo" class="logo"/>
     </header>
-    <div data-netlify-identity-menu></div>
+    <div class="login" data-netlify-identity-menu></div>
 </body>
 </html>
