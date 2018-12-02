@@ -1,17 +1,82 @@
-  /*
-    Colour Scheme:
-    Main: #2EB2FF;
-    Dodger Blue : #2DB4FC;
-    Steel grey : #B0C4CF;
-    Dim grey: #5F5F5F;
-    Sky Blue: #5DC3FC;
-    */
-    
+/*Colour Scheme:
+
+  Main: #2EB2FF;
+  Background Colour: #171717
+  Dodger Blue : #2DB4FC;
+  Steel grey : #B0C4CF;
+  Dim grey: #5F5F5F;
+  Sky Blue: #5DC3FC;
+
+*/
+
+/* Fonts:
+
+font-family: 'Exo', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Sedgwick Ave', cursive;
+font-family: 'Ranga', cursive;
+
+*/
+
 body{
   padding: 0px;
   margin:0;
+  background-color: #171717;
+  color:#ffffff;
 }
 
-.Logo{
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+
+.rightNav > a, .rightNav > div > ul > li > a {
+  padding-right: 10px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.login {
+  display: inline-block;
+}
+
+ul.netlify-identity-menu {
+  margin: 0;
+  padding: 0;
+}
+
+li.netlify-identity-item {
+  list-style: none;
+  display: inline-block;
+}
+
+section {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mainInfo > p {
+  margin-bottom: 35px;
+  font-size: 1.1em;
+}
+
+a.mainInfoBtn {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.3em;
+  background-color: #2DB4FC;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.mainInfo {
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
 }
