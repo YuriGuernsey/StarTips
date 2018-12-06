@@ -62,8 +62,13 @@ section {
 }
 
 .mainInfo > p {
-  margin-bottom: 35px;
+  margin-bottom: 0;
+  margin-top:0;
   font-size: 1.1em;
+}
+
+.mainInfo > p:last-of-type {
+  margin-bottom: 35px;
 }
 
 a.mainInfoBtn {
