@@ -11,10 +11,12 @@ function ajaxGetEvents() {
   });
 }
 $(document).ready(function () {
-  $("#account").on("click", function () {
-    $(".netlify-identity-login").click();
-  });
-  // VueJS data
+  functionLogin() {
+      $("#account").on("click", function () {
+        $(".netlify-identity-login").click();
+      });
+    }
+    // VueJS data
   var App = new Vue({
     el: "#Tips"
     , data: {
