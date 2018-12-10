@@ -11,11 +11,6 @@ function ajaxGetEvents() {
   });
 }
 $(document).ready(function () {
-  function Login() {
-    $("#account").on("click", function () {
-      $("#Log").click();
-    });
-  };
   // VueJS data
   var App = new Vue({
     el: "#Tips"
