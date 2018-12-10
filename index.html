@@ -53,7 +53,7 @@
       <template v-for="(tips, index) in json">
         <div class="Bubble">
           <div class="content">
-            <div class="tip">{{tips.Tips}}</div>
+            <div class="tip">"{{tips.Tips}}"</div>
             <div class="user">Tip by {{tips.User}}</div>
             <div v-if="" class="reference"><a v-bind:href="tips.Link">{{tips.Source}}</a></div>
           </div>
