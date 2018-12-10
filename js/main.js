@@ -7,10 +7,13 @@ function ajaxGetEvents() {
     , contentType: 'application/json'
     , processData: false
   }).done(function () {
-    console.log("Working")
+    console.log(json)
   });
 }
 $(document).ready(function () {
+  $("#account").on("click", function () {
+    $(".netlify-identity-login").click();
+  });
   // VueJS data
   var App = new Vue({
     el: "#Tips"

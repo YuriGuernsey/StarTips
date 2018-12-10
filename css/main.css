@@ -182,3 +182,7 @@ div#Tips {
 .reference > a {
   color: #1db3ff;
 }
+
+li.netlify-identity-item.netlify-identity-user-details {
+  padding-right: 10px;
+}
