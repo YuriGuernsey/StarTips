@@ -13,7 +13,7 @@ function ajaxGetEvents() {
 $(document).ready(function () {
   function Login() {
     $("#account").on("click", function () {
-      $(".netlify-identity-login").click();
+      $("#Log").click();
     });
   };
   // VueJS data
