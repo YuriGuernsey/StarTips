@@ -7,7 +7,7 @@ function ajaxGetEvents() {
     , contentType: 'application/json'
     , processData: false
   }).done(function () {
-    console.log(json)
+    console.log("Working")
   });
 }
 $(document).ready(function () {
