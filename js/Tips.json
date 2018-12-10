@@ -1,0 +1,8 @@
+var events = [{
+    "Tips": "tip #1"
+    , "User": "Yuri Alves"
+}
+  , {
+    "Tips": "tip #2"
+    , "User": "Yuri Alves"
+}]

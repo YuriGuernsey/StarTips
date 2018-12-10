@@ -9,6 +9,7 @@
 
 */
 
+
 /* Fonts:
 
 font-family: 'Exo', sans-serif;
@@ -18,71 +19,138 @@ font-family: 'Ranga', cursive;
 
 */
 
-body{
-  padding: 0px;
-  margin:0;
-  background-color: #171717;
-  color:#ffffff;
+@font-face {
+    font-family: 'Sedgwick Ave Regular';
+    src: url('./fonts/Sedgwick-Ave-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('./fonts/Sedgwick-Ave-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./fonts/Sedgwick-Ave-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./fonts/Sedgwick-Ave-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('./fonts/Sedgwick-Ave-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./fonts/Sedgwick-Ave-Regular.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Ranga Regular';
+    src: url('./fonts/Ranga-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('./fonts/Ranga-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./fonts/Ranga-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./fonts/Ranga-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('./fonts/Ranga-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./fonts/Ranga-Regular.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url(./fonts/'PT-Sans.eot');
+    /* IE9 Compat Modes */
+    src: url('./fonts/PT-Sans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./fonts/PT-Sans.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./fonts/PT-Sans.woff') format('woff'), /* Pretty Modern Browsers */
+    url('./fonts/PT-Sans.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./fonts/PT-Sans.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Exo Regular';
+    src: url('./fonts/Exo-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('./fonts/Exo-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./fonts/Exo-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./fonts/Exo-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('./fonts/Exo-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./fonts/Exo-Regular.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+body {
+    padding: 0px;
+    margin: 0;
+    background-color: #171717;
+    color: #ffffff;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
 }
 
-
-.rightNav > a, .rightNav > div > ul > li > a {
-  padding-right: 10px;
-  color: #fff;
-  font-family: 'Exo', sans-serif;
-  display: inline-block;
-  font-size: 1.2em;
+.rightNav > a,
+.rightNav > div > ul > li > a {
+    padding-right: 10px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    display: inline-block;
+    font-size: 1.2em;
 }
 
 .login {
-  display: inline-block;
+    display: inline-block;
 }
 
 ul.netlify-identity-menu {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 li.netlify-identity-item {
-  list-style: none;
-  display: inline-block;
+    list-style: none;
+    display: inline-block;
 }
 
 section {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .mainInfo > p {
-  margin-bottom: 0;
-  margin-top:0;
-  font-size: 1.1em;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.1em;
 }
 
 .mainInfo > p:last-of-type {
-  margin-bottom: 35px;
+    margin-bottom: 35px;
 }
 
 a.mainInfoBtn {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.3em;
-  background-color: #2DB4FC;
-  padding: 10px;
-  border-radius: 3px;
-  text-align: center;
-  margin: 0px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3em;
+    background-color: #2DB4FC;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 0px 10px;
 }
 
 .mainInfo {
-  text-align: center;
-  font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 100px;
+}
+
+div#Tips {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.Bubble {
+    width: 100%;
+    background-color: #2DB4FC;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.3em;
+    border-radius: 8px;
+    font-family: 'Exo', sans-serif;
+    margin-bottom: 50px;
 }

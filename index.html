@@ -1,47 +1,44 @@
 <!-- Doctype HTML5 -->
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="StarTips (Startup Tips) provides you with useful tips from a wide range of founders being from their success or their failure.">
-    
     <!-- Style Sheet -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Exo|PT+Sans|Ranga|Sedgwick+Ave" rel="stylesheet">
-
     <!-- Page Title -->
     <title>StarTips</title>
-
     <!-- Scripts-->
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/vue.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
-    
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <a href="/" class="Logo"><img src="./images/logo.png" alt="logo"/></a>
-      <div class="rightNav">
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <div class="login" data-netlify-identity-menu></div>
-      </div>
-      </header>
-      <section>
-        <div class="mainInfo">
-          <p>StarTips (Startup Tips) provides you with useful tips from a wide range of founders being from their success or their failure</p>
-          <p>You can sign up and start sharing your tips, or go to our Github page and submit a tip there.</p>
-          <p>You can find out more on our About page or the Readme file on the Github page</p>
-          <a href="/" class="mainInfoBtn">Login/Sign up</a>
-          <a href="/" class="mainInfoBtn">About</a>
-          <a href="/" class="mainInfoBtn">Github</a>
+        <a href="/" class="Logo"><img src="./images/logo.png" alt="logo" /></a>
+        <div class="rightNav"> <a href="/">Home</a> <a href="/">About</a>
+            <div class="login" data-netlify-identity-menu></div>
         </div>
+    </header>
+    <section>
+        <div class="mainInfo">
+            <p>StarTips (Startup Tips) provides you with useful tips from a wide range of founders being from their success or their failure</p>
+            <p>You can sign up and start sharing your tips, or go to our Github page and submit a tip there.</p>
+            <p>You can find out more on our About page or the Readme file on the Github page</p> <a href="/" class="mainInfoBtn">Login/Sign up</a> <a href="/" class="mainInfoBtn">About</a> <a href="/" class="mainInfoBtn">Github</a> </div>
+        <div id="Tips">
+            <template v-for="(events, index) in json">
+                <div class="Bubble">
+                    <div class="content"> {{events.Tips}} </div>
+                </div>
+            </template>
+        </div>
+    </section>
+</body>
 
-
-      </section>
-  </body>
 </html>
