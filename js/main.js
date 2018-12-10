@@ -1,3 +1,15 @@
+var loc = window.location.href
+  // JSON API that gets all the events
+function ajaxGetEvents() {
+  return $.ajax({
+    type: 'GET'
+    , url: loc + "/js/tips.json"
+    , contentType: 'application/json'
+    , processData: false
+  }).done(function () {
+    App.loading = false;
+  });
+}
 $(document).ready(function () {
   // VueJS data
   var App = new Vue({
@@ -14,15 +26,3 @@ $(document).ready(function () {
     }
   });
 });
-var loc = "https://Startips.io"
-  // JSON API that gets all the events
-function ajaxGetEvents() {
-  return $.ajax({
-    type: 'GET'
-    , url: loc + "/js/tips.json"
-    , contentType: 'application/json'
-    , processData: false
-  }).done(function () {
-    App.loading = false;
-  });
-}
