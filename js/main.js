@@ -3,7 +3,7 @@ var loc = window.location.href
 function ajaxGetEvents() {
   return $.ajax({
     type: 'GET'
-    , url: loc + "/js/Tips.json"
+    , url: "../js/Tips.json"
     , contentType: 'application/json'
     , processData: false
   }).done(function () {
