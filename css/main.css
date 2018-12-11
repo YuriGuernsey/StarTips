@@ -186,3 +186,9 @@ div#Tips {
 li.netlify-identity-item.netlify-identity-user-details {
   padding-right: 10px;
 }
+
+footer > a {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 10px 0px 10px;
+}
