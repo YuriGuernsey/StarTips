@@ -145,14 +145,15 @@ div#Tips {
 }
 
 .Bubble {
-  width: 100%;
-  background-color: #ffffff;
-  max-width: 1000px;
-  margin: 0 auto;
-  font-size: 1.3em;
-  border-radius: 3px;
-  font-family: 'Exo', sans-serif;
-  margin-bottom: 50px;
+width: 100%;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.3em;
+    border-radius: 0px 35px 0px 35px;
+    border: solid 3px #2db4fc;
+    font-family: 'Exo', sans-serif;
+    margin-bottom: 50px;
 }
 
 .content {
