@@ -18,6 +18,16 @@
   <script type="text/javascript" src="./js/jquery.min.js"></script>
   <script type="text/javascript" src="./js/vue.min.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
+  <link rel="manifest" href="/manifest.json" />
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "5dcdde91-e894-42b8-96b9-cc88b443f147",
+    });
+  });
+</script>
   <!-- Hotjar Tracking Code for https://startips.io -->
 <script>
     (function(h,o,t,j,a,r){
